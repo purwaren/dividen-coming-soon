@@ -39,7 +39,7 @@
         <nav class="navbar custom_nav navbar-expand-lg fixed-top sticky">
             <div class="container">
                 <a class="logo navbar-brand" href="index.html">
-                    <img src="images/logo.jpeg" alt="" class="">
+                    <img src="images/logo-dividen.png" alt="" class="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="mdi mdi-menu"></i>
@@ -52,8 +52,14 @@
                             <a class="nav-link" href="index.html#home">Home</a>
                         </li> 
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#join">Join Us</a>
+                            <a class="nav-link" href="index.html#register" id="join-us">Join Us</a>
                         </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#faq" id="faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#subscribe" id="subscribe">Get Updates</a>
+                        </li>
                     </ul>
                     <div>
                         <ul class="text-right list-unstyled list-inline mb-0 social_menu">
@@ -70,7 +76,7 @@
         <!-- Navbar End -->
 
         <!-- Start Home -->
-        <section class="position-relative header_bg">
+        <section class="position-relative header_bg" id="home">
             <div class="home-table">
                 <div class="home-table-center">
                     <div class="container z-index position-relative">
@@ -81,7 +87,7 @@
                                     <h1><span class="text-custom">Dividen.id</span> will lead investor to the right investee</h1>
                                     <p class="home_small_content mt-4 text-muted">Expand your business, Earn your profit</p>
                                     <div class="pt-3">
-                                        <a href="#" class="btn btn-gradient text-uppercase mr-2">Get Started</a> 
+                                        <a href="#register" class="btn btn-gradient text-uppercase mr-2" id="started">Get Started</a> 
                                     </div>
                                     <div class="moeny-more mt-4 pt-3">
                                        
@@ -109,45 +115,39 @@
         <!-- End Home -->
 
         <!-- Start Description -->
-        <section class="section bg-features vertical-content">
+        <section class="section bg-features vertical-content" id="register">
             <div class="bg-features-overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 offset-lg-6 col-md-12">
                         <div class="mt-3 features_desc text-white">
                             <div>
-                                <h3 class="features-heading text-capitalize">It’s all about innovate your business</h3>
+                                <h3 class="features-heading text-capitalize">Please fill the information bellow, so we can reach you</h3>
                                 <div class="main-title-border"></div>
                             </div>
-                            <div class="features">
-                                <div class="features-icon features-left">
-                                    <i class="mdi mdi-check"></i>
-                                </div>
-                                <div class="features-desc">
-                                    <h3 class="features-title">Clean & Minimal Design</h3>
-                                    <p class="features-sub-title pt-2">You want customer to your store. Easily publish your coupans and when a user has manage to catch one of your coupens.</p>
-                                </div>
-                            </div> 
-
-                            <div class="features">
-                                <div class="features-icon features-left">
-                                    <i class="mdi mdi-check"></i>
-                                </div>
-                                <div class="features-desc">
-                                    <h3 class="features-title">Planing & Strategy</h3>
-                                    <p class="features-sub-title pt-2">You want customer to your store. Easily publish your coupans and when a user has manage to catch one of your coupens.</p>
-                                </div>
-                            </div> 
-
-                            <div class="features">
-                                <div class="features-icon features-left">
-                                    <i class="mdi mdi-check"></i>
-                                </div>
-                                <div class="features-desc">
-                                    <h3 class="features-title">Elegant & Modern Design</h3>
-                                    <p class="features-sub-title pt-2">You want customer to your store. Easily publish your coupans and when a user has manage to catch one of your coupens.</p>
-                                </div>
-                            </div> 
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name / Company Name"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Phone Number"/>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>I am a...</option>
+                                    <option value="Company">Company</option>
+                                    <option value="Individual">Individual</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>I want to..</option>
+                                    <option value="Get Funded">Get Funded</option>
+                                    <option value="Invest">Invest</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-sm btn-success">Register</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                         <div class="section_title text-center">
                             <p class="small_title mb-4 text-custom text-uppercase">Frequently Asked Questions</p>
                             <h2 class="text-capitalize mx-auto section_header">Get Every Single Answer From Here.</h2>
-                            <p class="sec_subtitle pt-3 text-muted mx-auto">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime</p>
+                            <p class="sec_subtitle pt-3 text-muted mx-auto">All you need to know about Equity Crowdfunding and how its work</p>
                         </div>
                     </div>
                 </div>
@@ -180,49 +180,26 @@
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
                                         <h5 class="mb-0 align-middle" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <i class="mdi mdi-help-box h4"></i> <span>What is Lorem Ipsum?</span>
+                                            <i class="mdi mdi-help-box h4"></i> <span>What is ECF?</span>
                                         </h5>
                                     </div>
 
                                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            <p class="mb-0 text-muted">Suspendisse nirtbh finibus efficitur viverra masuada massa mauris suscipit purus pellentesque pharetra. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            <p class="mb-0 text-muted">ECF stands for Equity Crowd Funding, is a new way of collecting money from people to fund a project. It was regulated by POJK No. 37 which is published on December 2018 </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <div class="card-header" id="headingTwo">
-                                        <h5 class="collapsed mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <i class="mdi mdi-help-box h4"></i> <span>Why use Lorem Ipsum?</span>
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0 align-middle" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="mdi mdi-help-box h4"></i> <span>What is DIVIDEN?</span>
                                         </h5>
                                     </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                         <div class="card-body">
-                                            <p class="mb-0 text-muted">Maecenas viverra ornare sed maximus libero maximus on faucibus elit efficitur purus sollicitudin libero. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingThree">
-                                    <h5 class="collapsed mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <i class="mdi mdi-help-box h4"></i> <span>When can be used?</span>
-                                    </h5>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <p class="mb-0 text-muted">Donec erat eget ante efficitur eleifend dolor scelerisque erat magna justo carsras condimentum mauada.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingzzzzfpor">
-                                    <h5 class="collapsed mb-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        <i class="mdi mdi-help-box h4"></i> <span>WhIs safe use Lorem Ipsum?</span>
-                                    </h5>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" aria-labelledby="headingzzzzfpor" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <p class="mb-0 text-muted">Vivamus dolor hendrerit tempor elementum Interdum et fames ac ante ipsum primis malesuada in faucibus. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                            <p class="mb-0 text-muted">DIVIDEN is an ECF Platform. It will bring together the investor and investee, so they can choose to fund or to be funded</p>
                                         </div>
                                     </div>
                                 </div>
@@ -244,7 +221,7 @@
                             <div class="section_title position-relative text-center">
                                 <p class="small_title mb-4 text-white text-uppercase">Subcribe Now</p>
                                 <h2 class="text-capitalize text-white mx-auto section_header">Subscribe To Get Updates</h2>
-                                <p class="sec_subtitle pt-3 text-white mx-auto">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime</p>
+                                <p class="sec_subtitle pt-3 text-white mx-auto">Fill your email and our team will will reach you with the recent updates</p>
                             </div>
                             <div class="text-center subcribe-newslatter mt-5">
                                 <form class="mx-auto position-relative">
@@ -259,6 +236,18 @@
         </section>
         <!-- End Subcribe -->
 
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-warning">
+                            DISCLAIMER : OTORITAS JASA KEUANGAN TIDAK MEMBERIKAN PERNYATAAN MENYETUJUI ATAU TIDAK MENYETUJUI EFEK INI, TIDAK JUGA MENYATAKAN KEBENARAN ATAU KECUKUPAN INFORMASI DALAM LAYANAN URUN DANA INI. SETIAP PERNYATAAN YANG BERTENTANGAN DENGAN HAL–HAL TERSEBUT ADALAH PERBUATAN MELANGGAR HUKUM. INFORMASI DALAM URUN DANA INI PENTING DAN PERLU MENDAPAT PERHATIAN SEGERA. APABILA TERDAPAT KERAGUAN PADA TINDAKAN YANG AKAN DIAMBIL, SEBAIKNYA BERKONSULTASI DENGAN PENYELENGGARA. PENERBIT DAN PENYELENGGARA, BAIK SENDIRI-SENDIRI MAUPUN BERSAMA-SAMA, BERTANGGUNG JAWAB SEPENUHNYA ATAS KEBENARAN SEMUA INFORMASI YANG TERCANTUM DALAM LAYANAN URUN DANA INI.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Start Footer -->
         <footer class="pt-5 pb-5 footer_detail">
             <div class="container">
@@ -269,9 +258,9 @@
                         </div>
 
                         <div class="mt-4">
-                            <p class="mb-2"><i class="mdi mdi-map-marker"></i> 565 Mount Olive Road, Atlanta,GA 30308</p>
-                            <p class="mb-2"><i class="mdi mdi-cellphone"></i> +123 7854 1263</p>
-                            <p class="mb-2"><i class="mdi mdi-email-outline"></i> info@example.com</p>
+                            <p class="mb-2"><i class="mdi mdi-map-marker"></i> Depok</p>
+                            <p class="mb-2"><i class="mdi mdi-cellphone"></i> 021 6657723</p>
+                            <p class="mb-2"><i class="mdi mdi-email-outline"></i> info@dividen.id</p>
                             <ul class="list-inline fot_social mt-4">
                                 <li class="list-inline-item"><a href="" class="social-icon"><i class="mdi mdi-facebook"></i></a></li>
                                 <li class="list-inline-item"><a href="" class="social-icon"><i class="mdi mdi-twitter"></i></a></li>
@@ -304,11 +293,8 @@
                         <h6 class="mt-3 text-white font-weight-normal">Locations</h6>
                         <div class="footer_title_border"></div>
                         <ul class="list-unstyled footer_menu_list mb-0 mt-4">
-                            <li><a href="#">Melbourne</a></li>
-                            <li><a href="#">London</a></li>
-                            <li><a href="#">New York</a></li>
-                            <li><a href="#">San Francisco</a></li>
-                            <li><a href="#">Ontario</a></li>
+                            <li><a href="#">Jakarta</a></li>
+                            <li><a href="#">Depok</a></li>
                         </ul>
                     </div>
                 </div>

@@ -171,4 +171,15 @@
 function($) {
     "use strict";
     $.Axzisz.init();
+
+    $('#started').click(function(){
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#register").offset().top
+        }, 2000);
+    });
+    $('#join-us').click(function(){
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#register").offset().top
+        }, 2000);
+    });
 }(window.jQuery);
